@@ -23,7 +23,7 @@ if respostaInput == resposta:
     cont = cont + 1
 else:
   erro = erro + 1
-print("subtraia os seguintes valores:")
+print("subbbtraia os seguintes valores:")
 print(a)
 print(b)
 resposta = sub
