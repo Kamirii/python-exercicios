@@ -2,8 +2,8 @@
 # O jogo consiste em um desafio matemático no qual deve-se responder corretamente as quatro operações básicas.
 #Versão dinamica 
 import random
-a = random.randint(1,5)
-b = random.randint(1,5)
+a = random.randint(20,60)
+b = random.randint(10,50)
 respostaInput = input()
 resposta = float
 soma = a+b
@@ -24,9 +24,8 @@ while(True):
     acerto = acerto =+ 1
     break
  else:
-   erro = erro =+ 1
    print("Errado.Refaça") 
-   break
+   
 
 while(True):
   print("subtraia os seguintes valores:")
@@ -37,8 +36,7 @@ while(True):
   if respostaInput == resposta:
     acerto = acerto =+ 1
     break
-  else:
-    erro= erro =+ 1    
+  else:   
     print("Errado.Refaça") 
   
 while(True):
@@ -51,7 +49,6 @@ while(True):
      acerto = acerto =+ 1
      break
    else:
-    erro = erro =+ 1
     print("Errado.Refaça") 
  
 while(True):
@@ -64,9 +61,7 @@ while(True):
      acerto = acerto =+ 1
      break
    else:
-     erro = erro =+ 1
      print("Errado.Refaça") 
-if(acerto > erro):
-    print("Parabéns. VocÊ completou o teste com sucesso")
+print("Parabéns. VocÊ completou o teste com sucesso")
     
 
