@@ -2,7 +2,6 @@
 # O jogo consiste em um desafio matemático no qual deve-se responder corretamente as quatro operações básicas.
 #Versão dinamica 
 import random
-from timeit import repeat
 a = random.randint(1,5)
 b = random.randint(1,5)
 respostaInput = input()
@@ -14,24 +13,22 @@ sub = a-b
 acerto = 0
 erro = 0
 
-
 print("Você deve responder corretamente as 8 perguntas de operações básicas: ")
-
-while(respostaInput != resposta):
- while(True):
-  print("some os seguintes valores:")
-  print(a)
-  print(b)
-  resposta = soma
-  respostaInput = float(input("Insira sua resposta:"))
-  if respostaInput == resposta:
+while(True):
+ print("some os seguintes valores:")
+ print(a)
+ print(b)
+ resposta = soma
+ respostaInput = float(input("Insira sua resposta:"))
+ if respostaInput == resposta:
     acerto = acerto =+ 1
     break
-  else:
+ else:
    erro = erro =+ 1
    print("Errado.Refaça") 
-  repeat
- while(True):
+   break
+
+while(True):
   print("subtraia os seguintes valores:")
   print(a)
   print(b)
@@ -43,8 +40,8 @@ while(respostaInput != resposta):
   else:
     erro= erro =+ 1    
     print("Errado.Refaça") 
-    repeat
- while(True):
+  
+while(True):
    print("Multiplique os seguintes valores:")
    print(a)
    print(b)
@@ -56,8 +53,8 @@ while(respostaInput != resposta):
    else:
     erro = erro =+ 1
     print("Errado.Refaça") 
-   repeat
- while(True):
+ 
+while(True):
    print("Divida os seguintes valores:")
    print(a)
    print(b)
@@ -69,7 +66,6 @@ while(respostaInput != resposta):
    else:
      erro = erro =+ 1
      print("Errado.Refaça") 
-     repeat
 if(acerto > erro):
     print("Parabéns. VocÊ completou o teste com sucesso")
     
